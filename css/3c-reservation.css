@@ -1,0 +1,116 @@
+  
+  /* (B) SEATS LAYOUT */
+  #layout {
+    
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    grid-gap: 10px;
+    margin: 50px 70px 50px 70px;
+
+
+  }
+  .background {
+    background-color: rgb(218, 214, 214);
+    overflow: auto;
+    white-space: nowrap;
+  }
+
+
+  .seat {
+    
+    text-align: center;
+    padding: 20px 0;
+    background-color: #444451;
+    color: white;
+
+    
+  }
+  #layout .seat {
+    cursor: pointer;
+  }
+  .taken {
+    background: rgb(121, 21, 19);
+  }
+  .seat.processed {
+    background-color: rgb(3, 37, 76);
+  }
+  .seat.taken-user-slot {
+    background-color: rgb(203, 116, 60);
+  }
+  
+  .selected {
+    background: rgb(31, 95, 91);
+  }
+
+  
+
+  
+  /* (C) LEGEND */
+  #legend {
+    background: rgba(0, 0, 0, 0.1);
+    font-size: small;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 10px;
+ 
+  }
+  #legend div {
+    padding: 10px;
+    
+  }
+  
+  /* (D) "CHECKOUT" */
+  #go {
+    border: 0;
+    padding: 15px;
+    font-weight: 500;
+    color: #fff;
+    background: #9f3737;
+    cursor: pointer;
+    margin-top: 10px;
+    
+  }
+
+  
+  
+  @media (max-width:800px){
+  
+    #layout {
+      font-size: 10px;
+      display: grid;
+      grid-template-columns: repeat(24, 1fr);
+      grid-gap: 5px;
+      margin-left: 10px;
+      margin-right: 10px;
+      
+    }
+  
+    .seat {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 10px 0;
+      background-color: #444451;
+      color: white;
+      width: 15px;
+      height: 20px;
+    }
+    #layout .seat {
+      cursor: pointer;
+    }
+    .taken {
+      background: rgb(121, 21, 19);
+    }
+    .seat.processed {
+      background-color: rgb(3, 37, 76);
+    }
+    .seat.taken-user-slot {
+      background-color: rgb(203, 116, 60);
+    }
+    .selected {
+      background: rgb(31, 95, 91);
+    }
+  
+  }

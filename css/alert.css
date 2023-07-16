@@ -1,0 +1,24 @@
+
+.alert-success{
+margin:10px 0;
+display: block;
+background: #d4edda;
+padding: 10px;
+color:#155724;
+border-radius: 5px;
+font-size: 15px;
+  
+}
+.alert-danger{
+margin:10px 0;
+display: block;
+background: #f8d7da;
+padding: 10px;
+color:#721c24;
+border-radius: 5px;
+font-size: 15px;
+
+}
+
+
+
